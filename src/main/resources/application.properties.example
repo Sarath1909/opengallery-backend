@@ -1,0 +1,33 @@
+spring.application.name=open-gallery
+
+#Database properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/your_database_name
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+
+#hibernate properties
+spring.h2.console.enabled=true
+spring.jpa.show-sql=true
+#spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.default_schema=your_database_name
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=update
+#spring.jpa.hibernate.ddl-auto=create-drop
+
+#AWS SDK properties
+cloud.aws.credentials.access-key=your_access_key
+cloud.aws.credentials.secret-key=your_secret_key
+cloud.aws.region.static=region_name
+cloud.aws.s3.bucket=your_bucket
+
+spring.mail.host=your_mail_server
+spring.mail.port=port
+spring.mail.username=your_username
+spring.mail.password=your_passoerd
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+
+#To enable detailed logging
+logging.level.org.springframework.security=DEBUG
+logging.level.org.springframework.web=DEBUG
+logging.level.org.springframework=TRACE
