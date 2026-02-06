@@ -15,18 +15,18 @@ public class CorsConfig {
     public CorsFilter corsFilter() {
         CorsConfiguration config = new CorsConfiguration();
 
-        System.out.println("In config");        // ✅ Allow only your frontend origin (update with production URL later)
+        System.out.println("In config");        // Allow only your frontend origin (update with production URL later)
         config.setAllowedOrigins(Arrays.asList("http://localhost:5173"));
 
-        // ✅ Allow all necessary HTTP methods including OPTIONS
+        // Allow all necessary HTTP methods including OPTIONS
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
 
-        // ✅ Allow necessary headers
+        // Allow necessary headers
         config.setAllowedHeaders(Arrays.asList("*"));  // allow all headers
 
         config.setExposedHeaders(Arrays.asList("Authorization"));
 
-        // ✅ Allow credentials (for JWT)
+        // Allow credentials (for JWT)
         config.setAllowCredentials(true);
 
         // Apply config
