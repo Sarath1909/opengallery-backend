@@ -18,3 +18,6 @@ The application uses JWT for stateless authentication, integrates with AWS S3 fo
 - JPA / Hibernate
 - AWS S3
 - PostgreSQL
+
+**Frontend repository**: [https://github.com/<your-username>/opengallery-frontend](https://github.com/Sarath1909/opengallery-frontend)
+
